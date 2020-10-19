@@ -27,11 +27,35 @@ cognomi.sort();
 
 
 
-for ( var i = 0; i < cognomi.length; i++) {
+// for ( var i = 0; i < cognomi.length; i++) {
 
-    var humanIndex = (cognomi.indexOf(cognomi[i])) + 1;
-    console.log(humanIndex + ": " + cognomi[i]);  
-}
+//     var humanIndex = (cognomi.indexOf(cognomi[i])) + 1;
+//     console.log(humanIndex + ": " + cognomi[i]);  
+// }
+
+
+// var counter = 0;
+
+// while ( counter < cognomi.length) {
+
+//     var humanIndex = (cognomi.indexOf(cognomi[counter])) + 1;
+
+//     console.log(humanIndex + ": " + cognomi[counter]);
+
+//     counter++;
+// }
+
+
+var count = 0;
+
+do {
+
+    var humanIndex = (cognomi.indexOf(cognomi[count])) + 1;
+
+    console.log(humanIndex + ": " + cognomi[count]);
+    count++
+
+} while (count < cognomi.length)
 
 
 
