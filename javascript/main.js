@@ -8,30 +8,37 @@
 
 var cognome = prompt("inserire il proprio cognome");
 
-var firstCapital = cognome.slice(0,1);
+var firstCapital = cognome.slice(0,1); 
 
-var first = firstCapital.toUpperCase();
+var first = firstCapital.toUpperCase(); 
 
-var restOf = cognome.slice(1, cognome.length);
+var restOf = cognome.slice(1, cognome.length); 
 
-var rest = restOf.toLowerCase();
+var rest = restOf.toLowerCase(); 
 
-var cognomeUtente = first + rest;
+var cognomeUtente = first + rest; 
 
-var cognomi = ["Messner", "Pantani", "Baggio", "Totti", "Bonatti"];
+var cognomi = ["Messner", "Pantani", "Baggio", "Totti", "Bonatti"]; 
 
-cognomi.push(cognomeUtente);
+cognomi.push(cognomeUtente); 
 
-cognomi.sort();
-
-
+cognomi.sort(); 
 
 
-// for ( var i = 0; i < cognomi.length; i++) {
+var items = "";
 
-//     var humanIndex = (cognomi.indexOf(cognomi[i])) + 1;
-//     console.log(humanIndex + ": " + cognomi[i]);  
-// }
+
+for ( var i = 0; i < cognomi.length; i++) {
+
+    var item = cognomi[i];
+
+    var humanIndex = (cognomi.indexOf(item)) + 1; 
+    console.log(humanIndex + ": " + item); 
+    
+    items += '<li>' + item + '</li>';
+}
+
+document.getElementById("bignames").innerHTML = items;
 
 
 // var counter = 0;
@@ -46,16 +53,16 @@ cognomi.sort();
 // }
 
 
-var count = 0;
+// var count = 0;
 
-do {
+// do {
 
-    var humanIndex = (cognomi.indexOf(cognomi[count])) + 1;
+//     var humanIndex = (cognomi.indexOf(cognomi[count])) + 1;
 
-    console.log(humanIndex + ": " + cognomi[count]);
-    count++
+//     console.log(humanIndex + ": " + cognomi[count]);
+//     count++
 
-} while (count < cognomi.length)
+// } while (count < cognomi.length)
 
 
 
